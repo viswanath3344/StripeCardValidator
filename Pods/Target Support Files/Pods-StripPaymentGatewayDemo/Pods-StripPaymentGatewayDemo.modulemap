@@ -1,0 +1,6 @@
+framework module Pods_StripPaymentGatewayDemo {
+  umbrella header "Pods-StripPaymentGatewayDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

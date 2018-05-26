@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="StripePaymentGatewayDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mbR-fx-ROa">
+                                <rect key="frame" x="19" y="143.5" width="337.5" height="200"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z84-Np-Vtf">
+                                        <rect key="frame" x="104" y="114" width="130" height="40"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="Bq4-Ib-43d"/>
+                                            <constraint firstAttribute="height" constant="40" id="KEU-FQ-twh"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="PAY">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <state key="disabled" title="Pay"/>
+                                        <connections>
+                                            <action selector="payButtonTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="96k-sh-2cl"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Complete Payment" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jFB-j6-YkQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="337.5" height="42"/>
+                                        <color key="backgroundColor" red="0.0" green="0.44313725490196076" blue="0.72941176470588232" alpha="0.71995398116438358" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="42" id="C5o-zM-PAc"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please fill in your payment details to make a payment to XYZ" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MXF-eS-0qN">
+                                        <rect key="frame" x="34" y="154" width="270" height="46"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="46" id="N9e-QL-JhE"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="MXF-eS-0qN" firstAttribute="width" secondItem="mbR-fx-ROa" secondAttribute="width" multiplier="0.8" id="3ml-gb-FD1"/>
+                                    <constraint firstAttribute="height" constant="200" id="5WT-O7-by7"/>
+                                    <constraint firstItem="jFB-j6-YkQ" firstAttribute="leading" secondItem="mbR-fx-ROa" secondAttribute="leading" id="8OB-CA-HU5"/>
+                                    <constraint firstItem="Z84-Np-Vtf" firstAttribute="centerX" secondItem="mbR-fx-ROa" secondAttribute="centerX" id="G6v-f2-3hm"/>
+                                    <constraint firstItem="MXF-eS-0qN" firstAttribute="top" secondItem="Z84-Np-Vtf" secondAttribute="bottom" id="aUb-g1-wHV"/>
+                                    <constraint firstAttribute="trailing" secondItem="jFB-j6-YkQ" secondAttribute="trailing" id="cgF-dO-b1T"/>
+                                    <constraint firstItem="jFB-j6-YkQ" firstAttribute="top" secondItem="mbR-fx-ROa" secondAttribute="top" id="dzQ-OR-LEt"/>
+                                    <constraint firstAttribute="bottom" secondItem="MXF-eS-0qN" secondAttribute="bottom" id="gOu-Ku-TYO"/>
+                                    <constraint firstItem="MXF-eS-0qN" firstAttribute="centerX" secondItem="mbR-fx-ROa" secondAttribute="centerX" id="kWS-9J-rsF"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mbR-fx-ROa" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="TlC-9q-Fan"/>
+                            <constraint firstItem="mbR-fx-ROa" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="fxN-ww-VXG"/>
+                            <constraint firstItem="mbR-fx-ROa" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-100" id="wxF-ll-utl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="completePaymentLabel" destination="jFB-j6-YkQ" id="d85-5a-dfr"/>
+                        <outlet property="payButton" destination="Z84-Np-Vtf" id="Wij-NT-L0F"/>
+                        <outlet property="paymentView" destination="mbR-fx-ROa" id="qTz-S1-Vzx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="32.833583208395808"/>
+        </scene>
+    </scenes>
+</document>
